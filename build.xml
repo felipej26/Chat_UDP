@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Chat_UDP" basedir="." default="deploy">
+	<!-- Declara variaveis -->
+	<property name="path.work" value="C:\\Program Files\\Apache Software Foundation\\apache-tomcat-8.0.28\\work\\Catalina\\localhost" />
+	<property name="path.webapps" value="C:\\Program Files\\Apache Software Foundation\\apache-tomcat-8.0.28\\webapps" />
+	<property name="path.libs" value="C:\\Program Files\\Apache Software Foundation\\apache-tomcat-8.0.28\\lib" />
+	
+	<property name="project.adm" value="${ant.project.name}" />
+	<property name="project.lib" value="WebRoot\\resources\\lib" />
+	<property name="project.source" value="C:\\Workspaces\\Projeto SD - Redes\\Chat_UDP\\src" />
+	<!-- -->
+	
+	<target name="limpar">
+		<delete dir="${path.work}" failonerror="false" />
+		<delete file="${path.webapps}\\${project.adm}.war" failonerror="false" />
+		<delete dir="${path.webapps}\\${project.adm}" failonerror="false" />
+	</target>
+	
+	<target name="war">
+		
+		<!-- Não sei o que faz -->
+		<copy todir="WebRoot">
+		   	<fileset dir="${project.source}" />
+		</copy>
+		<copy todir="WebRoot">
+			<fileset dir="src" includes="**/*.jsp, **/*.htm" />
+		</copy>
+		<!-- -->
+		
+		<!-- Libs -->
+		<copy file="${path.libs}/servlet-api.jar" todir="${project.lib}" />
+		<copy file="${path.libs}/java-json.jar" todir="${project.lib}" />
+		<!-- Fim das Libs -->
+		
+		<delete file="${project.adm}.war" failonerror="true" />
+		<jar jarfile="${project.adm}.war" basedir="WebRoot" />
+		
+	</target>
+
+	<target name="deploy" depends="limpar,war">
+		<copy file="${project.adm}.war" todir="${path.webapps}" />
+	</target>
+	
+</project>

@@ -1,0 +1,80 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	
+	margin:0;
+	padding:0;
+	background: #CCC;
+	text-align: center;
+}
+
+#usuarios {
+	color: #FFFFFF; 
+}
+
+.box-user {
+    display: inline-block;
+    width: 130px;
+    height: 65px;
+    margin: 0px;
+    border: 3px solid;
+	text-align: left;
+	background-color: white;
+}
+
+.selecionado {
+	border: 1px solid #F00;
+}
+
+.container {
+	background-color: white;
+	border-style: solid;
+	width: 1080px;
+	margin:0 auto;			
+	text-align:left;
+	height: 96%;
+}
+
+.usuarios {
+	float: left;
+	height: 95%;
+	width: 15%;
+	background-color: blue;
+	border-style: solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	margin-left: 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.chat {
+	border-style: solid;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	margin-left: 5px;
+	height: 86%;
+	background-color: red;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.formulario {
+	border-style: solid;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	margin-left: 5px;
+	background-color: yellow;
+	width: 81%;
+	
+	float: right;
+}
+
+.formulario [type="text"]{
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 80%;
+}

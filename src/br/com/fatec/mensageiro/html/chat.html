@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chat UDP</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../../../../../resources/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../../resources/css/chat.css">
+  </head>
+  
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+  		
+  		<div class="col-sm-2">
+  		  <div class="panel panel-default" id="panelUsuarios">
+  			<div class="panel-heading">
+  			  
+  			  <h2 class="panel-title"><span class="glyphicon glyphicon-user"> </span> Usuários</h2>
+  			</div>
+  			
+  			<div class="panel-body" id="usuarios">
+  			  <div class="box-user" id="userMain">
+	      	    Carregando ...
+	      	  <!--  
+	      	    Jefferson<br>
+	      	    <i>127.0.0.1</i><br>
+	      	    <span class="glyphicon glyphicon-user usuarioOnline"> </span> (00:00:00)
+	      	  -->
+		      </div>
+		      
+		      <div id="divPai">
+		      	Aguardando outros usuários entrarem ...
+		      </div>
+		    <!--  
+		      <div class="box-user" id="user">
+	      	    Jefferson<br>
+	      	    <i>127.0.0.1</i><br>
+	      	    <span class="glyphicon glyphicon-user usuarioAusente"> </span> (00:00:00)
+		      </div>
+		    -->  
+  			</div>
+  			
+  		  </div> <!-- panelUsuarios -->
+  		</div> 
+  		
+  		<div class="col-sm-10">
+  		  <div class="panel panel-default">
+  		  	<div class="panel-heading">
+  		      <h2 class="panel-title"><span class="glyphicon glyphicon-list"> </span> Mensagens</h2>
+  		    </div>
+  		  	
+  			<div class="panel-body" id="panelMensagens">
+  				Carregando ...
+  			</div>
+  		  </div> <!-- panelMensagens -->
+  		</div>
+  		
+  		<div id="panelFormulario">
+  		  <form class="col-sm-10" id="formulario">
+  		  	
+  		    <div class"checkbox" id="lblSussurrar">
+  		  	  <label>
+  		  	    <input type="checkbox" value="sim" align="bottom" id="chkWhisper">
+  		          Sussurrar
+  		      </label>
+  		    </div>
+  		  
+  		    <div class="form-group">
+  			  <label for="mensagem" id="lblMensagem">Mensagem</label>
+  			  <input type="text" placeholder="Digite seu texto aqui!" class="form-control" id="txtMsg" autofocus>
+  		    </div>
+  		    
+  		    <div>
+  		      <button type="submit" class="btn btn-warning btn-lg pull-right" id="btnEnviar">
+  		        <span class="glyphicon glyphicon-arrow-right"> </span> Enviar
+  		      </button>
+  		  	</div>
+  		  	
+  		  </form>
+  		</div>
+  		
+  		<div>
+  		  <button type="submit" class="btn btn-warning btn-sm" id="btnSair" onclick="sair()">
+  		    <span class="glyphicon glyphicon-off"> </span> Sair
+  		  </button>
+  		</div>
+  		
+      </div>
+    </div>
+    
+    <script src="../../../../../resources/js/jquery.js"></script>
+    <script src="../../../../../resources/js/funcoes.js"></script>
+  </body>
+</html>
