@@ -1,0 +1,95 @@
+#panelMensagens {
+	height: 80%;
+	
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: auto;
+	line-height: 27px;
+	
+	font-size: 17px;
+}
+
+#usuarios {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#lblSussurrar {
+	font-size: 15px;
+	position: absolute;
+	top: 62px;
+}
+
+#lblMensagem {
+	position: absolute;
+	top: 20px;
+	left: 130px;
+}
+
+#txtMsg {
+	width: 75%;
+	position: absolute;
+	top: 65px;
+	left: 125px;
+}
+
+#btnEnviar {
+	position: absolute;
+	top: 55px;
+	left: 850px;
+}
+
+#btnSair {
+	position: relative;
+	top: 0px;
+	left: 850px;
+}
+
+#formulario {
+	margin: 0px;
+	padding: 0px;
+}
+
+#divPai {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.usuarioOnline {
+	color: #5cb85c;
+}
+
+.usuarioAusente {
+	color: #f0ad4e;
+}
+
+.jumbotron {
+	height: 97%;
+	margin-bottom: 0px;
+}
+
+.box-user {
+	border: 1px solid;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 3px;
+	width: 125px;
+    height: 65px;
+}
+
+.panel {
+	margin: 0px;
+}
+
+.selecionado {
+	border: 1px solid #F00;
+}
+
+.desselecionado {
+	border: 1px solid #000000;
+}
+
+body {
+	overflow-x: hidden;
+}
